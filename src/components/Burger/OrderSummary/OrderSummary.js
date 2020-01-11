@@ -3,7 +3,6 @@ import Aux from '../../../hoc/ReactAux/ReactAux';
 import Button from '../../UI/Button/Button';
 
 class OrderSummary extends Component {
-
     render() {
         const ingredientSummary = Object.keys(this.props.ingredients)
             .map(igKey => {
@@ -11,7 +10,7 @@ class OrderSummary extends Component {
                     <li key={igKey}>
                         <span style={{ textTransform: 'capitalize' }}>{igKey}</span>: {this.props.ingredients[igKey]}
                     </li>);
-            })
+            });
         return (
             <Aux>
                 <h3>Your Order</h3>
@@ -24,7 +23,7 @@ class OrderSummary extends Component {
                 <Button btnType="Danger" clicked={this.props.purchaseCancelled}>CANCEL</Button>
                 <Button btnType="Success" clicked={this.props.purchaseContinued}>CONTINUE</Button>
             </Aux>
-        )
+        );
     }
 }
 
