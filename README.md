@@ -2,16 +2,21 @@
 
 ## About 
 
-A single-page, React.js web application that allows creating and ordering a custom burger while the user is authenticated and viewing the existing orders of the authenticated user. It contains a validation form where the user enters personal information.
+A responsive, single-page, React.js web application that allows creating and ordering a custom burger while the user is authenticated, and viewing the existing orders of the authenticated user. It contains a validation form where the user enters personal information to receive the order. 
 
+- Home page
 ![](git-images/1.PNG)
 
+- Authentication, Signup/Signin to order
 ![](git-images/2.PNG)
 
+- Customize your burger, add/remove ingredients, press the ORDER button
 ![](git-images/3.PNG)
 
+- Fill the form fields and press ORDER, again
 ![](git-images/4.PNG)
 
+- Check your account orders
 ![](git-images/5.PNG)
 
 ## Deployment
