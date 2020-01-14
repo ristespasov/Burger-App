@@ -16,7 +16,7 @@ class Auth extends Component {
                 elementType: 'input',
                 elementConfig: {
                     type: 'email',
-                    placeholder: 'E-mail address'
+                    placeholder: 'Mail Address'
                 },
                 value: '',
                 validation: {
@@ -61,7 +61,7 @@ class Auth extends Component {
         this.setState({ controls: updatedControls });
     }
 
-    submitHandler = event => {
+    submitHandler = (event) => {
         event.preventDefault();
         this.props.onAuth(this.state.controls.email.value, this.state.controls.password.value, this.state.isSignup);
     }
@@ -102,7 +102,7 @@ class Auth extends Component {
         if (this.props.error) {
             errorMessage = (
                 <p>{this.props.error.message}</p>
-            )
+            );
         }
 
         let authRedirect = null;
@@ -133,14 +133,14 @@ const mapStateToProps = state => {
         isAuthenticated: state.auth.token !== null,
         buildingBurger: state.burgerBuilder.building,
         authRedirectPath: state.auth.authRedirectPath
-    }
+    };
 };
 
 const mapDispatchToProps = dispatch => {
     return {
         onAuth: (email, password, isSignup) => dispatch(actions.auth(email, password, isSignup)),
         onSetAuthRedirectPath: () => dispatch(actions.setAuthRedirectPath('/'))
-    }
+    };
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Auth);
