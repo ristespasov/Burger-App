@@ -37,10 +37,9 @@ Firebase hosting: https://burger-app-5e595.firebaseapp.com
 - Routing
 - Authentication
 - Form validation
-- Basic Sagas
-- Webpack 4
+- Axios
 
-## Authors
+## Made by
 
-Based on Maximilian Schwarzmüller's Udemy course https://www.udemy.com/react-the-complete-guide-incl-redux
+Riste Spasov, based on Maximilian Schwarzmüller's Udemy course https://www.udemy.com/react-the-complete-guide-incl-redux
 
